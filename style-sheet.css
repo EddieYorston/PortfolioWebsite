@@ -1,0 +1,501 @@
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+h1{
+	text-align:center;
+    padding: 8 40px;
+	
+	
+}
+
+p {
+	font-family: courier, Times, serif;
+	color: black;
+	text-indent: 10px;
+    text-align: justify;
+    letter-spacing: 1.5px;
+	line-height:1.5;
+	padding:5px;
+	
+
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+*{
+	box-sizing:border-box;
+}
+
+
+.body-header{
+	background-color:black;
+	padding:15px;
+	text-align:center;
+	
+}
+
+
+/*Main body of webpages*/
+.main-body{
+	float:left;
+	width:75%;
+	padding:5% 10%;
+}
+
+.side-menu{
+	float:left;
+	width:15%;
+	text-align:center;
+	
+}
+
+.side-menuitem{
+	background-color:#white;
+	padding:15px;
+	margin-top:7px;
+	height:;
+}
+
+
+.main-picture-content-1{
+	float:left;
+	padding:15px;
+	margin:margin-top;
+	
+}
+
+.main-picture-content-2{
+	float:left;
+	padding:15px;
+	margin:margin-top;
+}
+
+.main-picture-content-3{
+	float:left;
+	padding:15px;
+	margin:margin-top;
+}
+
+.main-picture-content-4{
+	float:left;
+	padding:15px;
+	margin:margin-top;
+}
+
+.main-picture-content-5{
+	float:left;
+	padding:15px;
+	margin:margin-top;
+}
+
+.main-picture-content-6{
+	float:left;
+	padding:15px;
+	margin:margin-top;
+}
+
+
+.image{
+		border-radius:50%;
+		width:200px;
+		height:200px;
+		display:block;
+		margin:0 auto;
+		
+	
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 48.7%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: 0px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #e1e3e8;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/* Create four equal columns that floats next to each other */
+
+.row {
+	width: 80%;
+	display: block;
+	left:50%;
+}
+
+.column img {
+    margin-top: 12px;
+	padding: 0 10%;
+	margin: 0 10%;
+	width: 20%;
+	display: inline-block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*Style all font awesome icons*/
+.fa{
+	padding:20px;
+	font-size:30px;
+	width:50px;
+	text-align:center;
+	text=decoration:none;
+	
+}
+
+/*Add a hover effect*/
+.fa:hover{
+	opacity:0.7;
+}
+
+/*Set a specific color for each brand*/
+
+/*Facebook*/
+.fa-facebook{
+	background:#3B5998;
+	color:white;
+}
+
+/*Twitter*/
+.fa-twitter{
+	background:#55ACEE;
+	color:white;
+}
+
+/*Twitter*/
+.fa-instagram{
+	background:#f45642;
+	color:white;
+}
+
+/*Bordered Form*/
+
+form{
+	border:3px solid #f1f1f1;
+}
+
+/*Full-width inputs*/
+
+input[type=text], input[type=password]{
+	width:100%;
+	padding:12px 20px;
+	margin:8px 0;
+	display:inline-block;
+	border:1px solid #ccc;
+	box-sizing:border-box;
+}
+
+/*Set a style for all buttons*/
+
+button{
+	background-color:white;
+	color:black;
+	padding:14px 20px;
+	margin:8px 0;
+	border:none:;
+	cursor:pointer;
+	width:10%;
+	}
+	
+button:hover{
+	opacity:0.8;
+}
+
+.cancelbtn{
+	width:auto;
+	padding:10px 18px;
+	background-color:;
+}
+
+/*Center the avatar image inside this container*/
+.imgcontainer{
+	text-align:center;
+	margin:24px 0 12px 0;
+}
+
+/*Avatar image*/
+img.avatar{
+	width:20%;
+	border-radius:50%;
+}
+
+/*Adding padding to container*/
+.contain{
+	padding:16px;
+}
+
+/*The "Forgot Password" text*/
+span.psw{
+	float:right;
+	padding-top:none;
+}
+
+/*Change style for span and cancel button on extra small screens*/
+@media screen and (max-width:300px){
+
+span.psw{
+	display:block;
+	float:none;
+}
+
+.cancelbtn{
+	width:100%;
+}
+
+}
+
+/* The Modal (background) */
+.mod {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.mod-content {
+    background-color: white;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 75%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style-sheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="javascript.js"></script>
+<head>
+<title>Homepage</title>
+
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="HomePage.html">About</a>
+  <a href="Education.html">Education</a>
+  <a href="Homelife.html">Homelife</a> 
+
+</div>
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()"></span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  <span id="Sidebutton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<div id="id01" class="mod">
+	<span onclick="document.getElementById('id01').style.display='none'"class="close" title="Close Modal">&times;</span>
+	
+<!--Modal Content -->
+
+	<form class="mod-content animate" action="/action_page.php">
+	<div class="imgcontainer"><img src="images/Me_Wedding.jpg" alt="Avatar" class="avatar"></div>
+	
+	<div class="contain">
+	<label><b>Username</b></label>
+	<input type="pass" placeholder="Enter Username" name="uname" required>	
+	
+	<label><b>Password</b></label>
+	<input type="pass" placeholder="Enter Password" name="psw" required>
+	
+	<button type="submit">Login</button>
+	<input type="checkbox" checked="checked">Remember Me</div>
+	
+	<div class="contain">
+	<button type="button" onclick="document.getElementById('id01').style.display='none'">Close</button>
+		<span class="psw"><a href="#">Forget Password?</a></span>
+	</div>
+</form>
+</div>	
+<div class="side-menu">
+	<div class="side-menuitem">
+	<!-- Add font awesome icons -->
+	<a href="#" class="fa fa-facebook"></a>
+	</div>
+	<div class="side-menuitem">
+	<a href="#" class="fa fa-twitter"></a>
+	</div>
+	
+	<div class="side-menuitem">
+	<a href="#" class="fa fa-instagram"></a>
+	</div>
+</div>
+<div class="main-body">
+
+<h1>Graduate Profile</h1>
+
+
+<h2>Welcome to Me!!</h2>
+		<p>This is my first portfolio, it show cases my Background, Family, Education, Work Experience, Hobbies & Interests, Inspirations and Career Goals.<br> 
+I have just graduated from Teesside University with a Second Class degree in Computer and Digital Forensics.</p>
+
+<p>The main areas that I have enjoyed the investigative aspects of the degree as this has helped me develop my analytical and logical skills by investigating networks, digital devices and servers.
+The main reason why I made the choice into doing this degree and working for Ten10, I have a keen interest in technology and I enjoy learning how something works and if it breaks how I would been able to figure out how that can be amended and back to working order.
+</p>
+
+		
+<h3>Attributes</h3>
+		<p>My key characteristics are I am a dedicated, hard-working and committed towards all work that I am given, I always take pride into my job roles. 
+My interest include cooking, baking and reading, I enjoy learning and creating new recipes and enjoy cooking for friends and family. </p>
+
+
+<div class="main-picture-content-1">
+		<img alt="header" class="image"  src="images/french-alps.jpg" >
+</div>
+
+<div class="main-picture-content-2">
+		<img alt="header" class="image"  src="images/asia-redsunset.jpg" >
+</div>
+
+<div class="main-picture-content-3">
+		<img alt="header" class="image"  src="images/asia-citylife.jpg">
+</div>
+
+<div class="main-picture-content-4">
+		<img alt="header" class="image"  src="images/sydney-opera-house.jpg" >
+</div>
+
+<div class="main-picture-content-5">
+	<img alt="header" class="image"  src="images/french-landscape.jpg" >
+</div>
+
+<div class="main-picture-content-6">
+	<img alt="header" class="image"  src="images/asia-scene.jpg" >
+</div>
+
+
+
+</div>
+
+
+</body>
+
+</html>
