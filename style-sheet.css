@@ -1,12 +1,11 @@
 body {
     font-family: "Lato", sans-serif;
-    transition: background-color .5s;
 }
 
 h1{
 	text-align:center;
-    padding: 8 40px;
-	
+    padding: 8 20px;
+	height: auto;
 	
 }
 
@@ -63,7 +62,6 @@ p {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-    transition: margin-left .5s;
     padding: 20px;
 }
 
@@ -88,15 +86,24 @@ p {
 
 /*Main body of webpages*/
 .main-body{
+	background-color:#ccffcc;
 	float:left;
-	width:75%;
-	padding:5% 10%;
+	width:70%;
+	padding:5% 5%;
+}
+
+.main-body-2{
+	background-color: #ffcc80;
+	float:left;
+	width:70%;
+	padding:5% 5%;
 }
 
 .side-menu{
 	float:left;
 	width:15%;
 	text-align:center;
+	padding:10px;
 	
 }
 
@@ -107,6 +114,12 @@ p {
 	height:;
 }
 
+.picture-content{
+	float:left;
+	padding:40px;
+	margin:margin-bottom;
+	
+}
 
 .main-picture-content-1{
 	float:left;
@@ -133,17 +146,6 @@ p {
 	margin:margin-top;
 }
 
-.main-picture-content-5{
-	float:left;
-	padding:15px;
-	margin:margin-top;
-}
-
-.main-picture-content-6{
-	float:left;
-	padding:15px;
-	margin:margin-top;
-}
 
 
 .image{
@@ -257,10 +259,59 @@ p {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: #e1e3e8;
+  background-color: #b3ccff;
   position: relative;
   border-radius: 6px;
 }
+
+.content1 {
+  padding: 20px 30px;
+  background-color: #b3fff0;
+  position: relative;
+  border-radius: 6px;
+}
+
+.content2 {
+  padding: 20px 30px;
+  background-color: #c1d0f0;
+  position: relative;
+  border-radius: 6px;
+}
+
+.content3 {
+  padding: 20px 30px;
+  background-color:  #ccffdd;
+  position: relative;
+  border-radius: 6px;
+}
+
+.picture-left{
+	width: 100%;
+	display: inline-block;
+	padding:10px 5px 5% 0;
+}
+
+.picture-right{
+	width: 100%;
+	display: inline-block;
+	margin-right:90px;
+	padding:10px 5px 5% 0;
+}
+
+.text-description-left {
+	margin-left: 7%;
+	width: 60%;
+	display: inline-block;
+	font-size:18px;
+}
+
+.text-description-right{
+	margin-right: 5%;
+	width: 70%;
+	display: inline-block;
+	font-size:18px;
+}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media all and (max-width: 600px) {
@@ -362,85 +413,82 @@ p {
 }
 
 /*Twitter*/
-.fa-instagram{
-	background:#f45642;
-	color:white;
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
-
 /*Bordered Form*/
 
 form{
 	border:3px solid #f1f1f1;
 }
-
-/*Full-width inputs*/
-
-input[type=text], input[type=password]{
-	width:100%;
-	padding:12px 20px;
-	margin:8px 0;
-	display:inline-block;
-	border:1px solid #ccc;
-	box-sizing:border-box;
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-/*Set a style for all buttons*/
-
-button{
-	background-color:white;
-	color:black;
-	padding:14px 20px;
-	margin:8px 0;
-	border:none:;
-	cursor:pointer;
-	width:10%;
-	}
-	
-button:hover{
-	opacity:0.8;
+/* Set a style for all buttons */
+button {
+    background-color: #80d4ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 12px 18px;
+    border: none;
+    cursor: pointer;
+    width: 10%;
 }
 
-.cancelbtn{
-	width:auto;
-	padding:10px 18px;
-	background-color:;
+button:hover {
+    opacity: 0.8;
 }
 
-/*Center the avatar image inside this container*/
-.imgcontainer{
-	text-align:center;
-	margin:24px 0 12px 0;
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 5px 9px;
+    background-color: #f44336;
 }
 
-/*Avatar image*/
-img.avatar{
-	width:20%;
-	border-radius:50%;
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    position: relative;
 }
 
-/*Adding padding to container*/
-.contain{
-	padding:16px;
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
 }
 
-/*The "Forgot Password" text*/
-span.psw{
-	float:right;
-	padding-top:none;
+.contain {
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	float:center;
 }
 
-/*Change style for span and cancel button on extra small screens*/
-@media screen and (max-width:300px){
-
-span.psw{
-	display:block;
-	float:none;
+.contain-1 {
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	float:center;
 }
 
-.cancelbtn{
-	width:100%;
-}
 
+.contain-2 {
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+span.psw {
+    float: center;
+    padding-top: 16px;
 }
 
 /* The Modal (background) */
@@ -460,24 +508,22 @@ span.psw{
 
 /* Modal Content/Box */
 .mod-content {
-    background-color: white;
-    margin: 5px auto; /* 15% from the top and centered */
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 75%; /* Could be more or less, depending on screen size */
+    width: 70%; /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button */
+/* The Close Button (x) */
 .close {
-    /* Position it in the top right corner outside of the modal */
     position: absolute;
     right: 25px;
-    top: 0; 
+    top: 0;
     color: #000;
     font-size: 35px;
     font-weight: bold;
 }
 
-/* Close button on hover */
 .close:hover,
 .close:focus {
     color: red;
@@ -494,8 +540,19 @@ span.psw{
     from {-webkit-transform: scale(0)} 
     to {-webkit-transform: scale(1)}
 }
-
+    
 @keyframes animatezoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
 }
